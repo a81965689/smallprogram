@@ -1,0 +1,5 @@
+<view id='echarts'>
+<ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}" ></ec-canvas>
+</view>
+{{a}}
+<button bindtap='change'>123</button>

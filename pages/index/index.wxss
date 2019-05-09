@@ -1,0 +1,6 @@
+/* pages/index/index.wxss */
+#echarts{
+  width: 750rpx;
+  height: 800rpx;
+  margin: 0 auto;
+}

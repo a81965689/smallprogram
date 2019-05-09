@@ -1,0 +1,4 @@
+<!--pages/mine/mine.wxml-->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<image :src='img' ></image>
+<button open-type="getUserInfo">登录</button>
