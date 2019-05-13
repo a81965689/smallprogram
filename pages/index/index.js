@@ -34,7 +34,6 @@ function initChart(canvas, width, height) {
       return chart;
     }
   })
-
 }
 const app = getApp();
 Page({

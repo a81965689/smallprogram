@@ -1,31 +1,40 @@
 //app.js
 App({
+
   onLaunch: function () {
-    var that = this;
-      wx.login({
-        success: function (res) {
-          wx.getUserInfo({
-            success: function (res) {
-              console.log(res)
-              // that.globalData.userInfo=res
-            }
-          })
-          var data = that.globalData
-          wx.request({
-            url: 'https://api.weixin.qq.com/sns/jscode2session',
-            data: { 'appid': data.AppID, 'secret': data.AppSecret, 'js_code': res.code, 'grant_type':'authorization_code'},
-            success: function (smg) {
-              console.log(smg)
-            }
-          })
+    var that=this;
+    wx.login({
+      success: res => {
+        wx.request({
+          url: 'https://api.weixin.qq.com/sns/jscode2session',
+          data: { appid: 'wx5ec0265ad251b96b', secret: '3d7c512b45fcc97bb3a53913e5642a10', js_code: res.code, grant_type: 'authorization_code' },
+          success: function (msg) {
+            that.globalData.openid = msg.data.openid;
+            that.globalData.session_key = msg.data.session_key;
+          }
+        })
+      }
+    }),
+      wx.getSetting({
+        success: res => {
+          if (res.authSetting['scope.userInfo']) {
+            wx.getUserInfo({
+              success: res => {
+                this.globalData.userInfo = res.userInfo
+                // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+                // 所以此处加入 callback 以防止这种情况
+                if (this.userInfoReadyCallback) {
+                  this.userInfoReadyCallback(res)
+                }
+              }
+            })
+          }
         }
       })
-
   },
-  
   globalData: {
     userInfo:'',
-    AppID:'wx5ec0265ad251b96b',
-    AppSecret:'3d7c512b45fcc97bb3a53913e5642a10'
+    openid:'',
+    session_key:''
   }
 })

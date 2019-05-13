@@ -6,3 +6,15 @@ button{
   left: 50%;
   transform:translateX(-50%);
 }
+.userAvatarUrl{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.userNickName{
+  text-align: center;
+  line-height: 80rpx;
+  font-weight: bold;
+}

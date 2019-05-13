@@ -1,34 +1,64 @@
 // pages/mine/mine.js
 const app=getApp()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    img:''
+    hasUserInfo: false
   },
-  // 	https://api.it120.cc/4aa6ff9c0adbf3742d55db326ae3d4f8/user/wxinfo
-  // logIn:function(){
-  //   wx.login({
-  //     success: function(res) {
-  //       wx.getUserInfo({
-  //         url:'https://api.it120.cc/4aa6ff9c0adbf3742d55db326ae3d4f8/user/wxapp/login',
-  //         data: {'code':res.code,'type':1},
-  //         success:function(res){
-  //           console.log(res)
-  //         }
-  //       })
-  //     },
-  //     fail: function(res) {},
-  //     complete: function(res) {},
-  //   })
-  // },
+    login:function(){
+      var that=this;
+      wx.login({
+        success: function (res) {
+          //获取授权信息
+          wx.getSetting({
+            success(res) {
+              if (res.authSetting['scope.userInfo']) {
+                wx.getUserInfo({
+                  success: function (res) {
+                    app.globalData.userInfo = res,
+                    that.setData({
+                      hasUserInfo:true
+                    })
+                  }
+                })
+              }else{
+                wx.showModal({
+                  title: '请允许获取您的个人信息',
+                  showCancel:false
+                })
+                return false
+              }
+            }
+          })
+          //把wx.login获取到的数据发送到后台获得openid和session_key
+          wx.request({
+            url: 'https://api.weixin.qq.com/sns/jscode2session',
+            data: { appid: 'wx5ec0265ad251b96b', secret: '3d7c512b45fcc97bb3a53913e5642a10', js_code: res.code, grant_type: 'authorization_code' },
+            success: function (msg) {
+              app.globalData.openid = msg.data.openid;
+              app.globalData.session_key = msg.data.session_key;
+            }
+          })
+        }
+      })
+    },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo
+      })
+    }else{
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 所以此处加入 callback 以防止这种情况
+      app.userInfoReadyCallback = res => {
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
