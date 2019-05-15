@@ -47,7 +47,8 @@ Page({
   onLoad: function (options) {
     if (app.globalData.userInfo) {
       this.setData({
-        userInfo: app.globalData.userInfo
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: true
       })
     }else{
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
