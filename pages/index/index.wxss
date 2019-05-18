@@ -2,5 +2,6 @@
 #echarts{
   width: 750rpx;
   height: 800rpx;
+  min-height: 800rpx;
   margin: 0 auto;
 }

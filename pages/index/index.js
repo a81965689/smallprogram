@@ -16,18 +16,41 @@ function initChart(canvas, width, height) {
         height: height
       });
       canvas.setChart(chart);
-      var option = {
-        xAxis: {
-          type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      let option = {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
         },
-        yAxis: {
-          type: 'value'
-        },
-        series: [{
-          data: [820, 932, 901, 934, 1290, 1330, 1320],
-          type: 'line'
-        }]
+        legend: { data: ['网络营销', '电话营销', '办事处', '合作方'] },
+        calculable: true,
+        grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+        xAxis: [{ type: 'category', data: ['杭州总部', '上海一分公司', '上海二分公司', '成都分公司', '深圳分公司'] }],
+        yAxis: [{ type: 'value' }],
+        color: ['#36D28E', '#F36370', '#64CEED', '#9285FD'],
+        series: [
+          {
+            name: '网络营销',
+            type: 'bar',
+            data: [100, 50, 100, 334, 50]
+          },
+          {
+            name: '电话营销',
+            type: 'bar',
+            data: [50, 60, 14, 334, 400]
+          },
+          {
+            name: '办事处',
+            type: 'bar',
+            data: [80, 60, 301, 46, 65]
+          },
+          {
+            name: '合作方',
+            type: 'bar',
+            data: [10, 50, 301, 334, 60]
+          }
+        ]
       };
 
       chart.setOption(option);
@@ -37,11 +60,6 @@ function initChart(canvas, width, height) {
 }
 const app = getApp();
 Page({
-  // 页面方法
-    /**
-   * 页面的初始数据
-   */
-
   data: {
     ec: {
       onInit: initChart,
@@ -52,7 +70,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var deviceHeight = wx.getSystemInfoSync().windowHeight;
+    this.setData({
+      deviceHeight:deviceHeight
+    })
+    //选中echarts节点然后加载
+    this.pa = this.selectComponent("#mychart-dom-bar");
+    this.pa.init()
   },
 
   /**
