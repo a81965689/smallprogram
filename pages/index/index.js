@@ -58,6 +58,7 @@ Page({
    */
   onLoad: function (options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var windowWidth = 320;
     try {
       var res = wx.getSystemInfoSync();
@@ -109,6 +110,11 @@ Page({
       width: windowWidth,
       height: 400
     });
+=======
+    //选中组件然后调用组件内方法
+    this.pa = this.selectComponent("#mychart-dom-bar");
+    this.pa.init()
+>>>>>>> parent of 65b6f42... wx-charts
 =======
     //选中组件然后调用组件内方法
     this.pa = this.selectComponent("#mychart-dom-bar");
