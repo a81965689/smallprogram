@@ -1,5 +1,4 @@
 //app.js
-let a=require('./utils/wxcharts-min.js')
 App({
 
   onLaunch: function () {

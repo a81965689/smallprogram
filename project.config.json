@@ -10,8 +10,7 @@
 		"minified": true,
 		"newFeature": true,
 		"nodeModules": false,
-		"autoAudits": false,
-		"uglifyFileName": false
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.6",
