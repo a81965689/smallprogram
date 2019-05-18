@@ -32,5 +32,6 @@
         "selectedIconPath": "static/img/wosel.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -64,7 +64,7 @@ Page({
         legendTextColor: '#cb2431'
       },
       width: windowWidth,
-      height: 200
+      height: 400
     });
   },
 
