@@ -1,3 +1,12 @@
 <view class='index'>
   <text class='title'>统计图表</text>
+  <view class='btnGrounp'>
+  <navigator class='btn btnOne' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  <navigator class='btn btnTwo' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  <navigator class='btn btnThree' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  <navigator class='btn btnFour' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  <navigator class='btn btnFive' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  <navigator class='btn btnSix' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  <navigator class='btn btnSeven' open-type='navigate' url='../charts/resource/resource'>资源库</navigator>
+  </view>
 </view>

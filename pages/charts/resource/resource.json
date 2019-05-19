@@ -2,5 +2,5 @@
   "usingComponents": {
     "ec-canvas": "../../components/ec-canvas/ec-canvas"
   },
-  "navigationBarTitleText":"主页"
+  "navigationBarTitleText": "资源统计图"
 }

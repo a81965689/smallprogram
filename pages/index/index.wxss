@@ -2,3 +2,48 @@
   display: block;
   text-align: center;
 }
+.btnGrounp{
+  width: 600rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  height: 600rpx;
+}
+.btnGrounp>.btn{
+  display: block;
+  width:48%;
+  height:100rpx;
+  
+  line-height:100rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #fff;
+}
+.btnGrounp :last-child{
+  flex: 1
+}
+.btnOne{
+  background: linear-gradient(to right,#69C2EE,#5C89FE)
+}
+.btnTwo{
+  background: linear-gradient(to right,#FB83B1,#FB8D74 )
+}
+.btnThree{
+  background: linear-gradient(to right,#F8B35C ,#F88E7A)
+}
+.btnFour{
+  background: linear-gradient(to right,#05A7E6 ,#60E8D8 )
+}
+.btnFive{
+  background: linear-gradient(to right,#34D8A8 ,#36D28D )
+}
+.btnSix{
+  background: linear-gradient(to right,#F3646F ,#F65884 )
+}
+.btnSeven{
+  background: linear-gradient(to right,#F8B35C ,#F88E7A );
+}
+  
