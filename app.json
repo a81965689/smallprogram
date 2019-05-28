@@ -4,7 +4,6 @@
     "pages/list/list",
     "pages/mine/mine",
     "pages/charts/resource/resource"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,5 +33,6 @@
         "selectedIconPath": "static/img/wosel.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

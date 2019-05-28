@@ -1,8 +1,6 @@
 import WxCanvas from './wx-canvas';
 import * as echarts from './echarts';
-
 let ctx;
-
 Component({
   properties: {
     canvasId: {
@@ -42,7 +40,6 @@ Component({
           + '#%E5%BE%AE%E4%BF%A1%E7%89%88%E6%9C%AC%E8%A6%81%E6%B1%82');
         return;
       }
-
       ctx = wx.createCanvasContext(this.data.canvasId, this);
 
       const canvas = new WxCanvas(ctx, this.data.canvasId);

@@ -1,6 +1,10 @@
 .title{
   display: block;
-  text-align: center;
+  width: 600rpx;
+  margin: 0 auto;
+  /* text-align: center; */
+  padding: 20rpx 0;
+  font-size: 30rpx;
 }
 .btnGrounp{
   width: 600rpx;
@@ -9,21 +13,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-
-  height: 600rpx;
+  
+}
+/* 金额汇总最后一个占位 */
+.btnGrounp::after{
+    content: "";
+    width: 30%; 
+    display: block; 
+    height:0; 
 }
 .btnGrounp>.btn{
   display: block;
-  width:48%;
+  width:22%;
   height:100rpx;
-  
   line-height:100rpx;
   border-radius: 10rpx;
   text-align: center;
+  font-size: 30rpx;
   color: #fff;
-}
-.btnGrounp :last-child{
-  flex: 1
+  margin-bottom: 20rpx;
 }
 .btnOne{
   background: linear-gradient(to right,#69C2EE,#5C89FE)
