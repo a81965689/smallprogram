@@ -1,3 +1,10 @@
 {
-  "navigationBarTitleText":"主页"
+  "usingComponents": {
+    "titlebar": "../../components/titlebar/titlebar"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#333333",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "认我行",
+  "navigationStyle":"custom"
 }

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1025532 */
+  src: url('//at.alicdn.com/t/font_1025532_cp3k4lyvduo.eot');
+  src: url('//at.alicdn.com/t/font_1025532_cp3k4lyvduo.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1025532_cp3k4lyvduo.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1025532_cp3k4lyvduo.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1025532_cp3k4lyvduo.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1025532_cp3k4lyvduo.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-xiazai45:before {
+  content: "\e61a";
+}
+.icon-paixu-jiang:before {
+  content: "\e60a";
+}
+.icon-paixu-sheng:before {
+  content: "\e60b";
+}
+.icon-paixu-j:before {
+  content: "\e60b";
+}
+.icon-back01:before {
+  content: "\e6b1";
+}
+.icon-back02:before {
+  content: "\e62a";
+}
+.icon-arrowup:before {
+  content: "\e62c";
+}
+.icon-arrowdown:before {
+  content: "\e60c";
+}
+
+
+

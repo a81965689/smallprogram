@@ -1,0 +1,6 @@
+<view style='height:{{statusBarHeight+44}}px;width100%;'>
+<view style='height:{{statusBarHeight}}px;background:{{bgcolor}}' class='statusbar' ></view>
+<view class='titlebar' style='top:{{statusBarHeight}}px;background:{{bgcolor}}'>
+<navigator open-type='navigateBack'><icon class='iconfont {{icon}}'></icon></navigator>
+</view>
+</view>

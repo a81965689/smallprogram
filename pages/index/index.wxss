@@ -1,57 +1,28 @@
-.title{
-  display: block;
-  width: 600rpx;
+page{
+  background-color: #333;
+}
+.nav{
+  width: 96%;
+  padding-top: 160rpx;
   margin: 0 auto;
-  /* text-align: center; */
-  padding: 20rpx 0;
-  font-size: 30rpx;
 }
-.btnGrounp{
-  width: 600rpx;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  
-}
-/* 金额汇总最后一个占位 */
-.btnGrounp::after{
-    content: "";
-    width: 30%; 
-    display: block; 
-    height:0; 
-}
-.btnGrounp>.btn{
-  display: block;
-  width:22%;
-  height:100rpx;
-  line-height:100rpx;
-  border-radius: 10rpx;
+.nav>navigator{
+  width: 100%;
+  height: 200rpx;
+  line-height: 200rpx;
   text-align: center;
-  font-size: 30rpx;
+  font-size: 40rpx;
+  font-weight: bold;
   color: #fff;
-  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  margin-bottom: 48rpx;
 }
-.btnOne{
-  background: linear-gradient(to right,#69C2EE,#5C89FE)
+.nav>navigator:nth-child(1){
+   background: linear-gradient(60deg, #E66B5F , #E9557E);
 }
-.btnTwo{
-  background: linear-gradient(to right,#FB83B1,#FB8D74 )
+.nav>navigator:nth-child(2){
+   background: linear-gradient(60deg, #F8B35C , #F88E7A);
 }
-.btnThree{
-  background: linear-gradient(to right,#F8B35C ,#F88E7A)
+.nav>navigator:nth-child(3){
+   background: linear-gradient(60deg, #66CBA0 , #66C5C0);
 }
-.btnFour{
-  background: linear-gradient(to right,#05A7E6 ,#60E8D8 )
-}
-.btnFive{
-  background: linear-gradient(to right,#34D8A8 ,#36D28D )
-}
-.btnSix{
-  background: linear-gradient(to right,#F3646F ,#F65884 )
-}
-.btnSeven{
-  background: linear-gradient(to right,#F8B35C ,#F88E7A );
-}
-  

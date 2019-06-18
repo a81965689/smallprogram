@@ -1,31 +1,8 @@
-<view class='index'>
-  <text class='title'>订单数量汇总(已成交客户)</text>
-  <view class='btnGrounp'>
-  <navigator class='btn btnOne' open-type='navigate' url='../charts/resource/resource' >天</navigator>
-  <navigator class='btn btnTwo' open-type='navigate' url='../charts/resource/resource'>周</navigator>
-  <navigator class='btn btnThree' open-type='navigate' url='../charts/resource/resource'>月</navigator>
-  <navigator class='btn btnFour' open-type='navigate' url='../charts/resource/resource'>年</navigator>
-  <!-- <navigator class='btn btnFive' open-type='navigate' url='../charts/resource/resource'>上海二部业务员订单数量及金额汇总</navigator>
-  <navigator class='btn btnSix' open-type='navigate' url='../charts/resource/resource'>成都业务员订单数量及金额汇总</navigator>
-  <navigator class='btn btnSeven' open-type='navigate' url='../charts/resource/resource'>深圳业务员订单数量及金额汇总</navigator> -->
-  </view>
-   <text class='title'>数量汇总(潜在客户)</text>
-  <view class='btnGrounp'>
-  <navigator class='btn btnOne' open-type='navigate' url='../charts/resource/resource' >天</navigator>
-  <navigator class='btn btnTwo' open-type='navigate' url='../charts/resource/resource'>周</navigator>
-  <navigator class='btn btnThree' open-type='navigate' url='../charts/resource/resource'>月</navigator>
-  <navigator class='btn btnFour' open-type='navigate' url='../charts/resource/resource'>年</navigator>
-  </view>
-  <text class='title'>金额汇总(公司订单)</text>
-  <view class='btnGrounp'>
-  <navigator class='btn btnOne' open-type='navigate' url='../charts/resource/resource' style='width:30%'>杭州</navigator>
-  <navigator class='btn btnTwo' open-type='navigate' url='../charts/resource/resource' style='width:30%'>上海一部</navigator>
-  <navigator class='btn btnThree' open-type='navigate' url='../charts/resource/resource' style='width:30%'>上海二部</navigator>
-  <navigator class='btn btnFour' open-type='navigate' url='../charts/resource/resource' style='width:30%'>成都</navigator>
-  <navigator class='btn btnTwo' open-type='navigate' url='../charts/resource/resource'  style='width:30%'>深圳</navigator>
-  </view>
-  <text class='title'>资源数量汇总</text>
-  <view class='btnGrounp'>
-  <navigator class='btn btnOne' open-type='navigate' url='../charts/resource/resource' style="width:100%" >资源数量汇总</navigator>
+<titlebar icon='icon-xiazai45'/>
+<view class='container'>
+  <view class='nav'>
+  <navigator open-type='navigate' url='../menulist/salesmenu/salesmenu' >销售量统计图表</navigator>
+  <navigator open-type='navigate' url='../charts/resource/resource'>合作单位录入统计</navigator>
+  <navigator open-type='navigate' url='../charts/resource/resource'>各分部资源数量汇总</navigator>
   </view>
 </view>

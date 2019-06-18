@@ -1,0 +1,55 @@
+/* pages/menulist/sales/salesmenu.wxss */
+page{
+  background-color: #333;
+}
+.nav{
+  width: 624rpx;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+}
+.nav>.btn{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  width: 100%;
+  font-size: 36rpx;
+  color: #fff;
+  height:160rpx;
+  line-height: 160rpx;
+  padding:0 45rpx;
+  background: linear-gradient(60deg, #E66B5F , #E9557E);
+  margin-bottom: 40rpx;
+}
+.nav>.opition{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10rpx;
+  height: 158rpx;
+  overflow: hidden;
+}
+.nav>.opition>navigator{
+  width: 125rpx;
+  height: 94rpx;
+  border-radius: 10rpx;
+  line-height: 94rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+}
+.nav>.opition>navigator:nth-child(1){
+    background-color: #5E94FB;
+}
+.nav>.opition>navigator:nth-child(2){
+    background-color: #FB898C;
+}
+.nav>.opition>navigator:nth-child(3){
+    background-color: #F89872;
+}
+.nav>.opition>navigator:nth-child(4){
+    background-color: #1CB7E2;
+}
+

@@ -1,4 +1,10 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "菜单"
+"usingComponents": {
+  "titlebar":"../../components/titlebar/titlebar"
+},
+"backgroundTextStyle": "dark",
+"navigationBarBackgroundColor": "#333333",
+"navigationBarTextStyle": "white",
+"navigationBarTitleText": "列表页",
+  "navigationStyle": "custom"
 }

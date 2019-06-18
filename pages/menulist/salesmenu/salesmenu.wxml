@@ -1,0 +1,14 @@
+<titlebar></titlebar>
+<view class='container'>
+<block wx:for='{{companyLocation}}' wx:key='index'>
+    <view class='nav'>
+    <view class='btn' bindtap='showBox' data-target='{{item.name}}'>{{item.name}}<icon class='iconfont icon-arrowdown' size='20' data-target='{{item.name}}'></icon></view>
+    <view class='opition' wx:if='{{show==item.name}}'>
+    <navigator type='navigator' url='../../list/list'>天</navigator>
+    <navigator type='navigator' url='../../list/list'>周</navigator>
+    <navigator type='navigator' url='../../list/list'>年</navigator>
+    <navigator type='navigator' url='../../list/list'>月</navigator>
+    </view>
+  </view>
+</block>
+</view>

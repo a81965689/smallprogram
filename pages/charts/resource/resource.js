@@ -1,10 +1,10 @@
 // pages/index/index.js
-import * as echarts from '../../components/ec-canvas/echarts';
+import * as echarts from '../../../components/ec-canvas/echarts';
 let chart = null;
 const app = getApp();
 Page({
   data: {
-    
+    statusBarHeight: app.globalData.statusBarHeight
   },
    initChart:function(canvas, width, height) {
     chart = echarts.init(canvas, null, {

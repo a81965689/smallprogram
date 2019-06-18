@@ -3,6 +3,11 @@ App({
 
   onLaunch: function () {
     var that=this;
+
+    wx.getSystemInfo({
+      success: function (res) {
+        that.globalData.statusBarHeight = res.statusBarHeight;
+      }}),
     wx.login({
       success: res => {
         wx.request({

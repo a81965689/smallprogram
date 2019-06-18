@@ -1,50 +1,36 @@
-// pages/list/list.js
+// pages/menulist/sales/salesmenu.js
 const app=getApp()
+
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      { name: 'one', price: 10, order: 50 },
-      { name: 'two', price: 16, order: 60 },
-      { name: 'three', price: 50, order: 40 },
-      { name: 'four', price: 40, order: 30 },
-      { name: 'five', price: 100, order: 20 },
-      { name: 'six', price: 80, order: 100 }
-    ],
-    order: true,
-    price: true
+    statusBarHeight: app.globalData.statusBarHeight,
+    // 控制按钮下拉的显示隐藏
+    show:'hidden',
+    companyLocation: [{ name: '杭州总部' }, { name: '上海一部' }, { name: '上海二部' }, { name: '成都分部' }, { name: '深圳分部' }, { name: '深圳分部' }, { name: '深圳分部' }, { name: '深圳分部' }, { name: '深圳分部' }, { name: '深圳分部' }]
   },
-  sort: function (e) {
-    let item = e.currentTarget.dataset.target
-    var that = this
-    that.setData({
-      list: that.data.list.sort((a, b) => {
-        let s = a[item];
-        let t = b[item];
-        if (that.data[item]) {
-          if (s < t) return 1;
-          if (s > t) return -1
-
-        } else {
-          if (s < t) return -1;
-          if (s > t) return 1;
-        }
-      })
-    }, function () {
+  showBox:function(e){
+    let that = this;
+    let flag = e.target.dataset.target
+    if(that.data.show==flag){
       that.setData({
-        [item]: !that.data[item]
+        show: !flag
+      });
+    }else{
+      that.setData({
+        show: flag
       })
-    })
-
+    }
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -78,7 +64,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-      
+
   },
 
   /**

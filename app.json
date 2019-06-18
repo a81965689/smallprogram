@@ -3,13 +3,14 @@
     "pages/index/index",
     "pages/list/list",
     "pages/mine/mine",
-    "pages/charts/resource/resource"
+    "pages/charts/resource/resource",
+    "pages/menulist/salesmenu/salesmenu"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#13CAB7",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "selectedColor": "#1296db",
@@ -19,12 +20,6 @@
         "text": "主页",
         "iconPath": "static/img/home.png",
         "selectedIconPath": "/static/img/homesel.png"
-      },
-      {
-        "pagePath": "pages/list/list",
-        "text": "菜单",
-        "iconPath": "static/img/caidan.png",
-        "selectedIconPath": "static/img/caidansel.png"
       },
       {
         "pagePath": "pages/mine/mine",

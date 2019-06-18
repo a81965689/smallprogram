@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "ec-canvas": "../../components/ec-canvas/ec-canvas"
+    "ec-canvas": "../../../components/ec-canvas/ec-canvas",
+    "titlebar": "../../../components/titlebar/titlebar"
   },
-  "navigationBarTitleText": "资源统计图"
+  "navigationStyle": "custom"
 }

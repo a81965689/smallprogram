@@ -1,16 +1,6 @@
-/* pages/list/list.wxss */
-.header{
-  box-sizing: border-box;
-  padding: 0 2%;
-  margin: 0 auto;
-  height: 44px;
-  line-height: 44px;
-  color: #fff;
-  background-color: #333;
-}
-.header icon{
-  font-size: 44rpx;
-}
+/* components/list.wxss */
+@import '../../static/style/iconfont.wxss';
+
 .table{
   width: 100%;
   height: auto;

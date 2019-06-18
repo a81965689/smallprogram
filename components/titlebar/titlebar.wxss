@@ -1,0 +1,20 @@
+/* components/titlebar/titlebar.wxss */
+@import '../../static/style/iconfont.wxss';
+.statusbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index: 999;
+}
+.titlebar{
+  box-sizing: border-box;
+  position:fixed;
+  width: 100%;
+  height: 44px;
+  padding: 0 2%;
+  color: #fff;
+  z-index: 999;
+}
+.titlebar icon{
+  font-size: 44rpx;
+}
